@@ -1,0 +1,13 @@
+{
+  "deviceid_db": {
+    "host": "mongodb",
+    "port": 27017,
+    "url": "",
+    "database": "deviceid_db",
+    "password": "",
+    "name": "deviceid_db",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
