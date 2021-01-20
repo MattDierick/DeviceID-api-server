@@ -31,3 +31,26 @@ The structure of the API is below:
 
 There are 2 properties ``username`` and ``deviceid``. As a reminder, Shape DeviceID sets 2 cookies (Cookie A and Cookie B).
 
+    1. GET Device ID per username : 
+    
+        GET /api/deviceids/findOne?filter={"where":{"username":"dierick"}}
+    
+    2. POST New Device ID : 
+    
+        POST /api/deviceids HTTP/1.1
+            {
+                "username": "dierick",
+                "deviceid": [
+                    "Ac31A2AAAAAA12uwoekcLffhgfjgjghj",
+                    "AUq7Xti2Eowm6yVog4CYvt6nRrookqgW"
+                    ]
+            }
+    3. UPDATE Device ID per username
+
+        POST /api/deviceids/upsertWithWhere?where={"username": "dierick"} HTTP/1.1
+            {
+                "deviceid": [
+                    "Rtdsflkj534565465kenfter"
+                ]
+            }
+
