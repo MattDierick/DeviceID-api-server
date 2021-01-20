@@ -11,6 +11,10 @@ You can connect to the API Server SwaggerUI through http://localhost:3000/explor
 
 You can import the Postman collection if you want to test through Postman.
 
+You can find the NodeJS docker image in the Packages section of this repository if you don't want to use the ``docker-compose``.
+
+
+
 # Structure of the API
 
 The API server has been created with Loopback.io v3. This command-cli tool create the structure of the API for you.
