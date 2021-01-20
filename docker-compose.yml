@@ -1,12 +1,13 @@
 services:
   nodejs-app:
-    image: docker.pkg.github.com/mattdierick/deviceid-api-server/deviceid-apiserver:latest
+    image: matt262810/deviceid-api-server:latest
     ports:
       - "3000:3000"
     container_name: nodejs
     links:
       - mongodb
     hostname: nodejs
+    restart: always
     depends_on:
       - mongodb
      
@@ -14,3 +15,4 @@ services:
     image: mongo
     hostname: mongodb
     container_name: mongodb
+    restart: always
