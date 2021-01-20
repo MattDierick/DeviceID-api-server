@@ -4,8 +4,8 @@ Run the docker-compose with ``docker-compose up -d``
 
 This will start 2 containers:
 
-    #. MongoDB container to store DeviceID per Username
-    #. NodeJS server
+    1. MongoDB container to store DeviceID per Username
+    2. NodeJS server
 
 You can connect to the API Server SwaggerUI through http://localhost:3000/explorer
 
