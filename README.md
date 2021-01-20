@@ -17,8 +17,6 @@ The API server has been created with Loopback.io v3. This command-cli tool creat
 
 The structure of the API is below:
 
-    .. code-block:: json
-
         {
             "username": "dierick",
             "deviceid": [
