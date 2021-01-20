@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "662c1a7b-3bd0-47ac-908f-40c5301bc20a",
+		"name": "DeviceID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET deviceID by username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.1.1.6:3000/api/deviceids/findOne?filter={\"where\":{\"username\":\"dierick\"}}",
+					"host": [
+						"10",
+						"1",
+						"1",
+						"6"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceids",
+						"findOne"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "{\"where\":{\"username\":\"dierick\"}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST DeviceID",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"vistola\",\r\n  \"deviceid\": [\r\n    \"654323456DFDSFG54535345\"\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "10.1.1.6:3000/api/deviceids",
+					"host": [
+						"10",
+						"1",
+						"1",
+						"6"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceids"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE deviceID by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "10.1.20.6:3000/api/deviceids/6005ddc1b4891c7df5b5db7d",
+					"host": [
+						"10",
+						"1",
+						"20",
+						"6"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceids",
+						"6005ddc1b4891c7df5b5db7d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all DeviceID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.1.20.6:3000/api/deviceids",
+					"host": [
+						"10",
+						"1",
+						"20",
+						"6"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceids"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH DeviceID",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"username\": \"dierick\",\r\n        \"deviceid\": [\r\n            \"Ac31A2AAAAAA12uwoekcLfsekmBAYk1k\",\r\n            \"AUq7Xti2Eowm6yVog4CYvt6nRrdikqgW\",\r\n            \"Ac31A2AAAAAA12uwoekcLfsekmBYYYYY\"\r\n        ],\r\n        \"id\": \"6005def2b4891c7df5b5db7f\"\r\n    }"
+				},
+				"url": {
+					"raw": "10.1.20.6:3000/api/deviceids",
+					"host": [
+						"10",
+						"1",
+						"20",
+						"6"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceids"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH DeviceID by username",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"deviceid\": [\r\n            \"Ac31A2AAAAAA12uwoekcLffhgfjgjghj\",\r\n            \"AUq7Xti2Eowm6yVog4CYvt6nRrookqgW\"\r\n        ]\r\n    }"
+				},
+				"url": {
+					"raw": "10.1.20.6:3000/api/deviceids/upsertWithWhere?where={\"username\": \"dierick\"}",
+					"host": [
+						"10",
+						"1",
+						"20",
+						"6"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deviceids",
+						"upsertWithWhere"
+					],
+					"query": [
+						{
+							"key": "where",
+							"value": "{\"username\": \"dierick\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
