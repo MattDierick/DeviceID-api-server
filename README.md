@@ -13,7 +13,28 @@ You can import the Postman collection if you want to test through Postman.
 
 You can find the NodeJS docker image in the Packages section of this repository if you don't want to use the ``docker-compose``.
 
+# iRule used to extract the DeviceID values
 
+iRule to decode DeviceID+ and insert into APM session variable
+
+    when ACCESS_SESSION_STARTED {
+        log local0. "Access Session Started"
+        if [HTTP::cookie exists _imp_apg_r_] {
+            set deviceid [URI::decode [HTTP::cookie _imp_apg_r_]]
+            log local0. "URL Decoded cookie is $deviceid"
+            set deviceida [lindex [regexp -inline -- (?:"diA":")(.*?)(?:") $deviceid] 1]
+            log local0. "diA = $deviceida"
+            set deviceidb [lindex [regexp -inline -- (?:"diB":")(.*?)(?:") $deviceid] 1]
+            log local0. "diB = $deviceidb"
+            log local0. "IP is [IP::client_addr]"
+            log local0. "Path os [HTTP::path]"
+            ACCESS::session data set session.logon.deviceid $deviceid
+            ACCESS::session data set session.logon.deviceida $deviceida
+            ACCESS::session data set session.logon.deviceidb $deviceidb
+        } else {
+        log local0. "No cookie"
+        }
+    }
 
 # Structure of the API
 
