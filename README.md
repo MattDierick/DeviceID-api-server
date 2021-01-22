@@ -59,4 +59,4 @@ There are 2 properties ``username`` and ``deviceid``. As a reminder, Shape Devic
 
 You can import the PRP policy ``policy_Common_PRPstandard.conf.tar.gz`` into your v16.0.0 BIG-IP APM.
 
-![GitHub Logo](https://raw.githubusercontent.com/MattDierick/DeviceID-api-server/main/images/prp.png)
+![GitHub Logo](https://raw.githubusercontent.com/MattDierick/DeviceID-api-server/main/images/PRP.png)
