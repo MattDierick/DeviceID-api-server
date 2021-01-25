@@ -85,4 +85,4 @@ You can import the PRP policy ``policy_Common_PRPstandard.conf.tar.gz`` into you
 
 # Demo video
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/PVYwh76nGVE)
+[![Watch the video]](https://youtu.be/PVYwh76nGVE)
