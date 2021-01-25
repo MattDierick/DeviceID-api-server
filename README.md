@@ -85,4 +85,4 @@ You can import the PRP policy ``policy_Common_PRPstandard.conf.tar.gz`` into you
 
 # Demo video
 
-[![Watch the video]](https://youtu.be/PVYwh76nGVE)
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/MattDierick/DeviceID-api-server/main/images/Youtube_screen.png)](https://youtu.be/PVYwh76nGVE)
