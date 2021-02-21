@@ -28,9 +28,9 @@ iRule to decode DeviceID+ and insert into APM session variable
             log local0. "diB = $deviceidb"
             log local0. "IP is [IP::client_addr]"
             log local0. "Path os [HTTP::path]"
-            ACCESS::session data set session.logon.deviceid $deviceid
-            ACCESS::session data set session.logon.deviceid.A $deviceida
-            ACCESS::session data set session.logon.deviceid.B $deviceidb
+            ACCESS::session data set session.custom.deviceid $deviceid
+            ACCESS::session data set session.custom.deviceid.A $deviceida
+            ACCESS::session data set session.custom.deviceid.B $deviceidb
         } else {
         log local0. "No cookie"
         }
